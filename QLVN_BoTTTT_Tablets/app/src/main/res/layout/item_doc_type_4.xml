@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:id="@+id/tv_don_vi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="top"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Đơn vị"/>
+
+        <TextView
+            android:id="@+id/tv_nguoi_gui"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="top"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Người gửi"/>
+
+        <TextView
+            android:id="@+id/tv_noi_dung_xu_ly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="top"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Nội dung xử lý"/>
+
+        <TextView
+            android:id="@+id/tv_nguoi_nhan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="top"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Người nhận"/>
+
+        <TextView
+            android:id="@+id/tv_ngay_xu_ly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="top"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Ngày xử lý"/>
+    </LinearLayout>
+</LinearLayout>

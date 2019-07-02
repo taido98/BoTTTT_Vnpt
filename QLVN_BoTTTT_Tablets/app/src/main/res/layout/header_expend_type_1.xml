@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingStart="10dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/view_ky"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                android:text="@string/str_noi_dung_chi_dao" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="4dp">
+                <TextView
+                    android:id="@+id/tv_luu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/str_luu"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:visibility="visible"
+                    android:textColor="@color/md_grey_800"
+                    android:gravity="bottom"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tv_mau"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/str_mau"
+                    android:textColor="@color/md_grey_800"
+                    android:textStyle="bold"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+            <EditText
+                android:id="@+id/et_comment"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:id="@+id/btn_xoa"
+                    android:layout_margin="4dp"
+                    android:src="@mipmap/icon_xoa_donvi"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                <ImageView
+                    android:id="@+id/btn_huy_ky_2"
+                    android:layout_margin="4dp"
+                    android:src="@mipmap/ky_02"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+                    <ImageView
+                    android:id="@+id/btn_ky_2"
+                    android:layout_margin="4dp"
+                    android:src="@mipmap/ky_01"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:weightSum="10"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_trich_yeu_2"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_trich_yeu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9.5"
+            tools:text="Nâng cấp hệ thống Office"
+            android:paddingLeft="4dp"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:weightSum="10"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_ngay_trinh"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tv_ngay_trinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="27/11/2017"
+            android:paddingLeft="4dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:gravity="center_vertical"
+        android:layout_marginStart="12dp"
+        android:weightSum="10"
+        android:layout_marginLeft="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_file_dinh_kem"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:id="@+id/itemAttackFile">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/img_file_1"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_file"/>
+                <TextView
+                    android:id="@+id/filename_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginStart="3dp"
+                    android:textColor="@color/colorPrimary"
+                    tools:text="pdf file"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:maxLength="30"
+                    android:layout_marginLeft="3dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_file_2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_file" />
+
+                <TextView
+                    android:id="@+id/filename_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    tools:text="pdf file"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:maxLength="30"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

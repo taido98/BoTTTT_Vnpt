@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="@dimen/padding_12dp"
+    android:paddingLeft="@dimen/padding_12dp"
+    android:paddingRight="@dimen/padding_12dp"
+    android:id="@+id/group_chuyen"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/ll_unit"
+                android:padding="@dimen/padding_6dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_don_vi"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_nhap_don_vi"
+                    android:background="@null"
+                    android:lines="1"
+                    android:scrollHorizontally="true"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/tv_don_vi"
+                    />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btn_them_don_vi"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_mo"
+                        />
+
+                    <ImageView
+                        android:id="@+id/btn_xoa_don_vi"
+                        android:layout_marginLeft="@dimen/padding_12dp"
+                        android:layout_marginTop="@dimen/padding_3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_xoa_donvi"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_unit"
+                android:background="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_personal"
+                android:padding="@dimen/padding_6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_ca_nhan"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_nhap_ca_nhan"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/tv_ca_nhan"
+                    />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btn_them_ca_nhan"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_mo"
+                        />
+
+                    <ImageView
+                        android:id="@+id/btn_xoa_ca_nhan"
+                        android:layout_marginLeft="@dimen/padding_12dp"
+                        android:layout_marginTop="@dimen/padding_3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_xoa_donvi"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:background="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_group"
+                android:padding="@dimen/padding_6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_nhom_ca_nhan"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_nhap_nhom_ca_nhan"
+                    android:background="@null"
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:inputType="none"
+                    android:lines="1"
+                    android:singleLine="true"
+                    android:editable="false"
+                    android:layout_height="wrap_content"
+                    tools:text="@string/tv_nhom_ca_nhan"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/btn_them_nhom_ca_nhan"
+                        android:layout_margin="@dimen/padding_3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_mo"
+                        />
+
+                    <ImageView
+                        android:id="@+id/btn_xoa_nhom_ca_nhan"
+                        android:layout_marginLeft="@dimen/padding_12dp"
+                        android:layout_marginTop="@dimen/padding_3dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/icon_xoa_donvi"
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_minister"
+                android:background="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <EditText
+                android:id="@+id/txt_nhap_noi_dung"
+                android:gravity="top"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_nhap_noi_dung"
+                android:lines="4"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/btn_ac_xoa"
+                android:layout_marginRight="@dimen/padding_12dp"
+                android:src="@drawable/vbden_004"
+                android:layout_width="@dimen/padding_48dp"
+                android:layout_height="@dimen/padding_48dp" />
+            <ImageView
+                android:id="@+id/btn_ac_chuyen"
+                android:layout_marginLeft="@dimen/padding_12dp"
+                android:src="@drawable/vbden_05"
+                android:layout_width="@dimen/padding_48dp"
+                android:layout_height="@dimen/padding_48dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

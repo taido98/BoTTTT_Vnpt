@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--Trich yeu-->
+        <LinearLayout
+            android:padding="@dimen/padding_3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_trich_yeu"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                />
+            <TextView
+                android:id="@+id/tv_so_ky_hieu"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/tv_so_ky_hieu"
+                />
+
+        </LinearLayout>
+
+        <!--Noi dung chi dao-->
+        <LinearLayout
+            android:padding="@dimen/padding_3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_noidung_chidao"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                />
+            <TextView
+                android:id="@+id/tv_noi_dung"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/tv_so_ky_hieu"
+                />
+
+        </LinearLayout>
+
+        <!--Noi nguoi ky-->
+        <LinearLayout
+            android:padding="@dimen/padding_3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_nguoi_ky"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                />
+
+            <TextView
+                android:id="@+id/tv_nguoi_ky"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:text="@string/tv_so_ky_hieu" />
+
+        </LinearLayout>
+
+        <!--Ngay ban hanh -->
+        <LinearLayout
+            android:padding="@dimen/padding_3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_ngay_ban_hanh"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  "
+                />
+            <TextView
+                android:id="@+id/tv_ngay_ban_hanh"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/tv_so_ky_hieu"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

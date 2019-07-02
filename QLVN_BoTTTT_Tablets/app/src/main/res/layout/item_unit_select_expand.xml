@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.qlvb.vnpt.botttt.schedule.ui.view.SecondLevelExpandableListView
+        android:layout_weight="1"
+        android:id="@+id/expandible_listview"
+        android:layout_width="match_parent"
+        android:groupIndicator="@null"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+    </com.qlvb.vnpt.botttt.schedule.ui.view.SecondLevelExpandableListView>
+
+</LinearLayout>

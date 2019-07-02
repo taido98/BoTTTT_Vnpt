@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/rowSecondText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="28dp"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:focusable="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.qlvb.vnpt.botttt.schedule.ui.view.ToggleableRadioButton
+            android:focusable="false"
+            android:id="@+id/radio_xlc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/xlc_toggle_btn"
+            />
+
+        <com.qlvb.vnpt.botttt.schedule.ui.view.ToggleableRadioButton
+            android:focusable="false"
+            android:id="@+id/radio_ph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/ph_toggle_btn" />
+
+        <com.qlvb.vnpt.botttt.schedule.ui.view.ToggleableRadioButton
+            android:focusable="false"
+            android:id="@+id/radio_xem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:button="@drawable/xem_toggle_btn" />
+    </RadioGroup>
+</LinearLayout>

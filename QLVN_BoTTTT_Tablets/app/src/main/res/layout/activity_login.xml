@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login"
+    android:orientation="vertical"
+    tools:context=".ui.activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Hệ thống văn bản điều hành"
+            android:textAllCaps="true"
+            android:textColor="@color/md_white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <!--Input login-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/viewTop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/padding_16dp"
+                    android:layout_width="@dimen/padding_24dp"
+                    android:layout_height="@dimen/padding_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_login_1" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etUserLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/md_grey_500"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/tenDangNhap"
+                        android:inputType="text"
+                        android:paddingBottom="6dp"
+                        android:textColor="@color/md_black"
+                        android:textColorHint="@color/md_grey_500"
+                        android:textSize="16sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/padding_12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="@dimen/padding_16dp"
+                    android:layout_width="@dimen/padding_24dp"
+                    android:layout_height="@dimen/padding_24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/icon_login_2" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/etPasswordLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:textColorHint="@color/md_black"
+                    app:hintEnabled="true">
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="@color/md_grey_500"
+                        android:fontFamily="sans-serif"
+                        android:hint="@string/matKhau"
+                        android:inputType="textPassword"
+                        android:paddingBottom="6dp"
+                        android:textColor="@color/md_black"
+                        android:textColorHint="@color/md_grey_500"
+                        android:textSize="14sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_gravity="right"
+                android:id="@+id/ghiNhoTaiKhoan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/viewTop"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textStyle="italic"
+                    android:layout_gravity="center"
+                    android:id="@+id/txtGhiNhoTaiKhoan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/REMEMBER_LABEL"
+                    android:textColor="@color/md_grey_800" />
+
+                <com.github.lguipeng.library.animcheckbox.AnimCheckBox
+                    android:id="@+id/ckGhiNhoTaiKhoan"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    app:checked="true"
+                    app:circle_color="@color/md_white"
+                    app:stroke_color="@color/md_grey_800" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/btnDangNhap"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ghiNhoTaiKhoan"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/backgorud_border_corner_blue800">
+
+                <TextView
+                    android:id="@+id/txtDangNhap"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/LOGIN_BTN_LABEL"
+                    android:textAllCaps="true"
+                    android:textColor="@color/md_white"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!--ghi chu-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ho_tro_ky_thuat"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/padding_24dp"
+                    android:layout_height="@dimen/padding_24dp"
+                    android:src="@drawable/icon_tel" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:text="024.3.556.3462"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/padding_24dp"
+                    android:layout_height="@dimen/padding_24dp"
+                    android:src="@drawable/icon_fax" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:text="04.3.5563458"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/padding_24dp"
+                    android:layout_height="@dimen/padding_24dp"
+                    android:src="@drawable/icon_mail" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:text="@string/dieu_hanh"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

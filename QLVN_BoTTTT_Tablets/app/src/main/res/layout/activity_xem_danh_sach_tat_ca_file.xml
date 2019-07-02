@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.XemDanhSachTatCaFileActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:background="?attr/colorPrimary"
+        android:textColor="@android:color/white"
+        android:text="@string/str_title_file"
+        />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvDanhSach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:textSize="16sp"
+            android:textColor="@color/md_blue_700"
+            android:text="@string/str_no_data"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|bottom"
+            android:paddingRight="@dimen/padding_48dp"
+            android:paddingBottom="@dimen/padding_48dp">
+
+            <ImageView
+                android:id="@+id/btn_xoa"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/vbden_004" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    
+
+    
+</LinearLayout>

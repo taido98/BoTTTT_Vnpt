@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight=".3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/et_list_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_margin="4dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="4dp"
+                    android:drawableLeft="@mipmap/ic_search"
+                    android:background="@drawable/bg_edit_text"
+                    android:drawableStart="@mipmap/ic_search"
+                    android:hint="@string/str_trich_yeu"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:selectAllOnFocus="true"
+                    android:focusable="true"
+                    android:textSize="12sp"/>
+                <TextView
+                    android:id="@+id/tv_list_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    tools:text="tất cả"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingStart="12dp"
+                    android:paddingRight="4dp"
+                    android:paddingEnd="4dp"
+                    android:drawableEnd="@mipmap/ic_filter"
+                    android:drawableRight="@mipmap/ic_filter" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/md_grey_700"/>
+
+                <ListView
+                    android:id="@+id/list_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:choiceMode="singleChoice"
+                    android:descendantFocusability="blocksDescendants"
+                    android:listSelector="@android:color/darker_gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_no_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_no_data"
+                    android:textSize="18sp"
+                    android:visibility="gone"
+                    android:textColor="@color/md_blue_700"/>
+                <com.eyalbira.loadingdots.LoadingDots
+                    android:id="@+id/list_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/rightFragmentContainer"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".7">
+
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

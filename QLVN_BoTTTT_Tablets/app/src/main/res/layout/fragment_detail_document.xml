@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qlvb.vnpt.botttt.schedule.ui.fragment.DetailDocumentComingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--An hien dung id cua layout include nhe-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include
+                android:visibility="gone"
+                layout="@layout/layout_donvi_canhan_nhomcanhan"
+                />
+        </FrameLayout>
+
+        <ExpandableListView
+            android:id="@+id/expandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:groupIndicator="@drawable/group_indicator"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_no_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_no_data"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:textColor="@color/md_blue_700"/>
+        <com.eyalbira.loadingdots.LoadingDots
+            android:id="@+id/view_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!--An hien dung id cua layout include nhe-->
+    <LinearLayout
+        android:gravity="bottom|right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_btn_chuc_nang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             />
+    </LinearLayout>
+
+</RelativeLayout>
